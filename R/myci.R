@@ -8,6 +8,7 @@
 #' @export
 #'
 #' @examples
+#'x <- rnorm(30, mean = 10, sd = 12); myci(x)
 myci <- function(x) {
   # Sample size
   n <- length(x)
@@ -32,7 +33,5 @@ myci <- function(x) {
   c(lower_bound, upper_bound)
 }
 
-# Test the function
-set.seed(23)
-x <- rnorm(30, mean = 10, sd = 12)
-myci(x)
+
+
